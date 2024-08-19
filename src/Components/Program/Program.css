@@ -1,0 +1,55 @@
+.services{
+    margin: 0px auto 10px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.services h3{
+    margin: 30px;
+    font-weight: 300;
+}
+
+.services p{
+    margin: 20px auto;
+    color: #b3b2b7;
+    font-weight: lighter;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.service-images{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.service img{
+    border-radius: 10px;
+    max-width: 50px;
+    margin: 20px auto ;
+}
+
+.service h4{
+    border-radius: 10px;
+    max-width: 50px;
+    margin: 10px auto;
+}
+
+.service{
+    flex-basis: 25%;
+}
+
+
+/* media query */
+
+@media (max-width: 650px){
+    .serivices{
+      flex-direction: column;  
+    }
+    .service{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
