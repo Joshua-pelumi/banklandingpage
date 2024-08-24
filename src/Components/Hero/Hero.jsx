@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import phone_icon from '../../assets/image-mockups.png'
 import bg_desktop from '../../assets/bg-intro-desktop.svg'
+import bg_mobile from '../../assets/bg-intro-mobile.svg'
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
       <div className='hero-right'>
         <div className='img1'>
         <img src={bg_desktop} alt="" />
+        <img src={bg_mobile} alt="" />
         </div>
         <div className='img2'>
         <img src={phone_icon} alt="" />

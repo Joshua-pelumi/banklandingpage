@@ -3,7 +3,6 @@ nav{
     /* background: #333; */
     color: #252620;
     padding:0px 0;
-    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -53,25 +52,26 @@ nav div li{
 
 @media (max-width: 1000px){
     .logo{
-        width: 140px;
+        width: 40px;
     }
     nav ul li{
-        margin: 10px 15px;
+        margin:5px 10px;
     }
 }
 
 @media (max-width: 840px){
     nav{
-        padding: 15px 0;
+        padding: 10px 0;
     }
 
     nav ul{
         position: fixed;
         top: 0;
         right: 0;
-        background: #212EA0;
+        background:#fff;
         z-index: -1;
         width: 200px;
+        height: 60vh;
         padding-top: 70px;
         transition: 0.5s;
         bottom: 0; 
@@ -79,6 +79,8 @@ nav div li{
     nav ul li{
         display: block;
         margin: 25px 40px;
+        color: hsl(233, 26%, 24%);
+        background: #fff;
     }
 
 

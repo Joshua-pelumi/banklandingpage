@@ -45,7 +45,7 @@
 /* media query */
 
 @media (max-width: 650px){
-    .serivices{
+    .service-images{
       flex-direction: column;  
     }
     .service{

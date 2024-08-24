@@ -1,4 +1,4 @@
-.hero{
+.hero{    
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -34,9 +34,14 @@
 .hero-right img{
     width: 600px;
 }
+
 .img1{
     position: relative;
 }
+.img1 img:last-child{
+    display: none;
+}
+
 .img2{
     position: absolute;
     top: 0;
@@ -46,8 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .hero-text{
     text-align: center;
     max-width: 800px;
@@ -69,18 +74,51 @@
 /* meidia query */
 
 @media (max-width: 850px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-left{
+        flex-basis: 60%;
+        padding: 10px 10px;
+        margin: 30px 20px;
+    }
+    .hero-right{
+        flex-basis: auto;
+        padding: 20px 10px;
+        margin: 0px 40px;
+    }
+
+    .img1{
+        position: absolute;
+        max-width: 20vw;
+    }
+    
+    .img2{
+        position: relative;
+        max-width: 20vw;
+    }    
+
     .hero-text h1{
         font-size: 40px;
     }
 }
 
 @media (max-width: 650px){
+    .img1 img:first-child{
+        display: none;
+    }
+
+    .img1 img:last-child{
+        display: block;
+    }
+
     .hero-text h1{
         font-size: 30px;
         max-width: 400px;
         margin: auto;
     }
-    .hero-textp{
+    .hero-text p{
         font-size: 14px;
         margin: 15px auto 30px;
     }
