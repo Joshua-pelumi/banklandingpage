@@ -76,6 +76,7 @@
 @media (max-width: 850px){
     .hero{
         flex-direction: column;
+        order: 2;
     }
 
     .hero-left{
